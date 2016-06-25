@@ -1,0 +1,398 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	font-family: '楷体';
+	overflow-x: hidden;
+	overflow-y: hidden; 
+}
+#modal {
+	display: none;
+	background: url('../img/2.jpg');
+	height: 700px;
+	width: 1365px;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+#enter_box {
+	display: none;
+	width: 280px;
+	height: 280px;
+	position: absolute;
+	left: 38%;
+	top: 18%;
+}
+.choose_userimg {
+	display: inline-block;
+	width: 64px;	
+	height: 64px;
+	border: 1px dotted #ccc;
+	position: absolute;
+	left: 38%;
+	top: 19%;
+	background-position: center;
+	background-size: cover;
+	cursor: pointer;
+}
+
+.file_img {
+	display: inline-block;
+	width: 64px;	
+	height: 64px;
+	cursor: pointer;
+	position: absolute;
+	left: 0%;
+	top: 0%;
+}
+.file {
+	width: 64px;	
+	height: 64px;
+	opacity: 0;
+	cursor: pointer;
+}
+.input_username {
+	position: absolute;
+	left: 2%;
+	top: 70%;
+	width: 265px;
+	height: 32px;
+	border: 1px solid #ccc;
+	box-shadow: 2px 2px 3px white;
+	/*border-radius:8px; */
+	opacity: 0.8;
+	background: url('../img/ico/user.png') no-repeat  -2px -1px;
+	text-indent: 40px;
+	font-size: 16px;
+	font-family: '楷体';
+	color: white;
+}
+
+.enter {
+	color: white;
+	position: absolute;
+	right: -15%;
+	top: 71%;
+	font-size: 18px;
+	cursor: pointer;
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	background: url('../img/ico/enter.ico') no-repeat;
+
+}
+#wrapper {
+	display: none;
+}
+.sidebar_left {
+	width: 12%;
+	height: 660px;
+	background: #39f;
+	float: left;
+	max-height: 660px;
+
+}
+.sidebar_title {
+	display: inline-block;
+	width: 150px;	
+	font-size: 16px;
+	color: white;
+	padding: 5px 0 15px 3px;
+}
+.users_info {
+	display: inline-block;
+	width: 156px;
+	height: 42px;
+	text-align: center;
+	/*border: 1px solid #ccc;*/
+	box-shadow: 2px 2px 5px white;
+
+	border-radius: 3px;
+	margin: 10px 0 0 2px;
+	position: relative;
+	background: white;
+}
+
+.users_img {
+	display: inline-block;
+	width: 41px;
+	height: 41px;
+	background:white;
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+	left: 0;
+}
+
+
+.users_name {
+	line-height: 41px;
+	letter-spacing: 1px;
+	padding-left: 32px;
+	color: black;
+}
+
+.chatpanel_right {
+	width: 88%;
+	height: 700px;
+
+	float: right;
+}
+
+.chatpanel_right .top_userinfo {
+	height: 10%;	
+	border-bottom: 1px solid #ccc;	
+}
+.user_date {
+	color: #999;
+	font-size: 14px;
+}
+.chatpanel_right .center_chatcontent {
+	height: 62%;
+	border-bottom: 1px solid #ccc;
+}
+.center_title {
+	font-size: 15px;
+	padding: 5px 0 10px 0;
+}
+.title_msg {
+	margin-left: 10px;
+}
+
+.title_clear {
+	float: right;
+	margin-right: 10px;
+	cursor: pointer;
+	color: #999;
+}
+
+.content {
+	padding-left: 10px; 
+	overflow: scroll;
+	overflow-x: hidden;
+	max-height: 400px; 
+}
+
+.content_info {
+	position: relative;
+	width: 1170px;
+	min-height: 95px;
+}
+
+.c_users_img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 35px;
+	height: 35px;
+	border-radius: 35px;
+	background:url('../img/1.jpg');
+	background-position: center;
+	background-size: cover;
+}
+
+.c_users_name {
+	position: absolute;
+	left: 4%;
+	top: 0;
+}
+
+.c_users_time {
+	position: absolute;
+	left: 4%;
+	top: 22px;
+	color: #999;
+	font-size: 13px;
+}
+.c_users_content {
+	position: absolute;
+	left: 4%;
+	top: 45px;
+	max-width: 94%;
+	/*height: auto;*/
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 6px 8px 6px 8px;
+	box-shadow: 2px 2px 3px #ccc;
+	word-wrap: break-word;
+
+
+
+}
+
+
+.chatpanel_right .bottom_sendmsg {
+	height: 28%;
+	
+}
+.top_userinfo {
+	position: relative;
+}
+.user_img {
+	display: inline-block;
+	width: 69px;
+	height: 70px;
+	background:url('../img/1.jpg');
+	background-position: center;
+	background-size: cover;
+}
+
+.user_name {
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+/*	border: 1px solid #ccc;*/
+	position: absolute;
+	left: 7%;
+	
+}
+
+.user_date {
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	/*border: 1px solid #ccc;*/
+	position: absolute;
+	left: 7%;
+	top: 38px;
+}
+.user_exit {
+	position: absolute;
+	right: 8px;
+	top: 8px;
+	font-size: 15px;
+	font-family: '楷体';
+	color: #999;
+	cursor: pointer;
+}
+
+.bottom_sendmsg {
+	padding-left: 5px;
+	position: relative;
+}
+textarea {
+	font-family: '楷体';
+	font-size: 16px;
+	color: #999;
+	text-indent: 5px;
+	font-style: italic;
+	border: 1px #ccc solid;
+	border-radius: 5px;
+	position: absolute;
+	top: 38px;
+}
+
+.choose {
+	height: 28px;
+	line-height: 38px;
+	color:#666;
+	font-size: 15px;
+
+}
+
+button {
+	position: absolute;
+	right: 10px;
+	top: 124px;
+	background: #39f;
+	border: none;
+	border-radius: 5px;
+	width: 75px;
+	height: 28px;
+	line-height: 28px;
+	font-family: '楷体';
+	font-size: 16px;
+	color: white;
+	letter-spacing: 8px;
+	text-align: center;
+	padding-left: 12px;
+}
+
+
+.user_enter {
+	opacity: 0.8;
+	width: 40%;
+	height: 20px;
+	margin: 2px auto;
+	text-align: center;
+	color: #999;
+	font-size: 14px;
+	letter-spacing: 2px;
+	/*border: 1px solid #ccc;*/
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	box-shadow: 3px -1px 3px #9cf;
+
+}
+
+.enterdate {
+	color: #ccc;
+	font-size: 12px;
+	letter-spacing: 0px;
+}
+
+.user_exit_info {
+	opacity: 0.8;
+	width: 40%;
+	height: 20px;
+	margin: 2px auto;
+	text-align: center;
+	color: #999;
+	font-size: 14px;
+	letter-spacing: 2px;
+	/*border: 1px solid #ccc;*/
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	box-shadow: 3px -1px 3px #9cf;
+}
+.exitdate {
+	color: #ccc;
+	font-size: 12px;
+	letter-spacing: 0px;
+}
+
+
+/*当前信息置右*/
+.c_users_img_r {
+	position: absolute;
+	right: 14px;
+	top: 0;
+	width: 35px;
+	height: 35px;
+	border-radius: 35px;
+	background:url('../img/1.jpg');
+	background-position: center;
+	background-size: cover;
+}
+
+.c_users_name_r {
+	position: absolute;
+	right: 6%;
+	top: 0;
+}
+
+.c_users_time_r {
+	position: absolute;
+	right: 6%;
+	top: 22px;
+	color: #999;
+	font-size: 13px;
+}
+.c_users_content_r {
+	position: absolute;
+	right: 6%;
+	top: 45px;
+	max-width: 94%;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 6px 8px 6px 8px;
+	box-shadow: 2px 2px 3px #ccc;
+	word-wrap: break-word;
+
+
+
+}
+
+
+
